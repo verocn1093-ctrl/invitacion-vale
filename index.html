@@ -3,13 +3,15 @@
 <script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "vendor/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "vendor/react-dom.production.min.js"};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vale&amp;Bart-te-esperamos-este-marzo-2026</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script src="js/dc-runtime.js"></script>
 </head>
 <body>
 
 <x-dc>
 <helmet>
-<title>Valeria &amp; David · 06.03.2027</title>
+<title>Vale&amp;Bart-te-esperamos-este-marzo-2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <style>/* cyrillic-ext */
@@ -778,7 +780,7 @@
             <img src="images/img-39.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 22s infinite both">
         </div>
       </div>
-      <p style="margin:14px auto 0;width:100%;text-align:center;font-family:'Manrope',sans-serif;font-weight:400;font-size:clamp(19px,2vw,25px);line-height:1.4;letter-spacing:.02em;color:#FFF8EC">¡Te esperamos para<br>compartir, este gran día!</p>
+      <p style="margin:14px auto 0;width:100%;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(15px,1.5vw,19px);line-height:1.45;letter-spacing:.02em;color:#FFF8EC">¡Te esperamos para<br>compartir, este gran día!</p>
     </div>
   </section>
 
@@ -1252,7 +1254,16 @@ class Component extends DCLogic {
     const voteGenre = (name) => () => {
       const row = { genero: name };
       const mgNow = this.state.myGenres || [];
-      if (mgNow.indexOf(name) !== -1) { this.setState({ genreMsg: 'Ya votaste por ' + name + '.' }); return; }
+      if (mgNow.indexOf(name) !== -1) {
+        // segundo clic sobre un género elegido: se deselecciona
+        this.save((prev) => {
+          const idx = prev.generos.map((r) => r && r.genero).lastIndexOf(name);
+          const gs = prev.generos.slice();
+          if (idx !== -1) gs.splice(idx, 1);
+          return { generos: gs, myGenres: (prev.myGenres || []).filter((n) => n !== name), genreMsg: 'Quitaste tu voto por ' + name + '.' };
+        });
+        return;
+      }
       if (mgNow.length >= LIMIT) { this.setState({ genreMsg: 'Ya usaste tus ' + LIMIT + ' votos. Gracias.' }); return; }
       this.save((prev) => {
         const mg = prev.myGenres || [];
