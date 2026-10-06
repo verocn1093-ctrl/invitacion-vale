@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html><head>
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "vendor/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "vendor/react-dom.production.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/dc-runtime.js"></script>
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<title>Valeria &amp; David · 06.03.2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-07.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-08.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-09.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/font-10.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-07.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-08.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-09.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-10.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-07.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-08.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-09.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-10.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-11.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-12.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-13.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-14.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-15.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/font-16.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-11.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-12.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-13.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-14.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-15.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/font-16.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-11.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-12.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-13.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-14.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-15.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/font-16.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="js/image-slot.js"></script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#FAF7F2;color:#1C1917;font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:#A98B5D;text-decoration:none;transition:color .4s ease}
+  a:hover{color:#1C1917}
+  ::selection{background:rgba(169,139,93,.28)}
+  input,textarea,select,button{font-family:'Manrope',system-ui,sans-serif;font-size:14px}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:#A98B5D !important}
+  iframe{display:block}
+  @keyframes gwUp{from{opacity:0;transform:translateY(38px)}to{opacity:1;transform:none}}
+  @keyframes gwZoom{from{transform:scale(1.14)}to{transform:scale(1)}}
+  @keyframes gwGif{0%{opacity:0}1.2%{opacity:1}8.33%{opacity:1}10.6%{opacity:0}100%{opacity:0}}
+  @keyframes gwFloat{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-14px) rotate(.6deg)}}
+  @keyframes gwGrain{0%{transform:translate3d(0,0,0)}25%{transform:translate3d(-2%,1%,0)}50%{transform:translate3d(1%,-2%,0)}75%{transform:translate3d(-1%,-1%,0)}100%{transform:translate3d(0,0,0)}}
+  @keyframes gwCue{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(10px);opacity:1}}
+  @keyframes gwSealIn{0%{opacity:0;transform:translate(-50%,-50%) scale(.72) rotate(-14deg)}100%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0)}}
+  @keyframes gwSealPulse{0%,100%{box-shadow:0 14px 34px -14px rgba(6,14,28,.75),0 0 0 0 rgba(226,232,242,.34)}50%{box-shadow:0 14px 34px -14px rgba(6,14,28,.75),0 0 0 20px rgba(226,232,242,0)}}
+  @keyframes gwHint{0%,100%{opacity:.5;transform:translateY(0)}50%{opacity:1;transform:translateY(5px)}}
+  @keyframes gwSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes gwMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</helmet>
+
+<div style="overflow-x:clip">
+
+  <div style="position:fixed;inset:0;z-index:65;pointer-events:none;background-image:url(&quot;images/img-01.png&quot;);background-size:200px 200px;background-repeat:repeat;opacity:.5;mix-blend-mode:multiply"></div>
+
+  <div id="gwIntro" style="position:fixed;inset:0;z-index:200;background:#221F1B;opacity:1;transition:opacity 1.5s cubic-bezier(.4,0,.6,1)">
+    <video id="gwIntroVid" src="video/intro-01.mp4" autoplay="{{ true }}" muted="{{ true }}" sc-camel-plays-inline="{{ true }}" preload="auto" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+    <button id="gwIntroSkip" type="button" sc-camel-on-click="{{ skipIntro }}" style="position:absolute;right:clamp(16px,3vw,40px);bottom:clamp(20px,3vw,40px);cursor:pointer;background:transparent;border:1px solid rgba(255,255,255,.5);border-radius:999px;color:rgba(255,255,255,.85);padding:10px 22px;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;transition:background .4s ease,border-color .4s ease" style-hover="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.85)">Entrar</button>
+  </div>
+
+  <nav id="gwNav" style="position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,2vw,28px);padding:16px clamp(16px,3vw,44px);color:#FFFFFF;background:rgba(250,247,242,0);border-bottom:1px solid transparent;backdrop-filter:blur(8px);transition:background .55s ease,color .55s ease,border-color .55s ease">
+    <a href="#gwtop" style="color:inherit;flex:0 0 auto;white-space:nowrap;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:17px;letter-spacing:.26em">V &amp; D</a>
+    <div style="display:flex;flex:1 1 auto;flex-wrap:wrap;justify-content:center;gap:10px clamp(12px,2vw,34px);min-width:0;font-size:clamp(9.5px,.9vw,11px);font-weight:600;letter-spacing:.22em;text-transform:uppercase">
+      <a href="#lugar" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Lugar</a>
+      <a href="#galeria" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Historia</a>
+      <a href="#itinerario" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Itinerario</a>
+      <a href="#regalos" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Regalos</a>
+      <a href="#musica" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Música</a>
+      <a href="#dudas" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Dudas</a>
+      <a href="#rsvp" style="color:inherit;border-bottom:1px solid transparent;padding-bottom:4px;transition:border-color .45s ease,opacity .45s ease" style-hover="border-color:currentColor;opacity:.8">Confirmación</a>
+    </div>
+    <a href="#rsvp" style="color:inherit;flex:0 0 auto;white-space:nowrap;border:1px solid currentColor;border-radius:999px;padding:11px clamp(18px,2.4vw,30px);font-size:10.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;transition:background .5s ease,letter-spacing .5s ease" style-hover="background:rgba(169,139,93,.28);letter-spacing:.36em">Confirmar</a>
+  </nav>
+
+  <section id="gwtop" data-screen-label="Hero" style="position:relative;height:100vh;min-height:660px;overflow:hidden;background:#221F1B">
+    <div id="gwHeroBg" style="position:absolute;inset:-7% 0 0 0;height:114%;will-change:transform">
+      <div style="width:100%;height:100%;animation:gwZoom 2.8s cubic-bezier(.16,1,.3,1) both">
+        <div style="width:100%;height:100%;background-image:url(&quot;images/img-02.jpg&quot;);background-size:cover;background-position:34% 42%"></div>
+      </div>
+    </div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(28,25,23,.55) 0%,rgba(28,25,23,.2) 40%,rgba(28,25,23,.7) 100%)"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:130px 28px 110px;pointer-events:none;color:#FFFFFF">
+      <p style="margin:0 0 26px;font-size:12px;font-weight:600;letter-spacing:.45em;text-transform:uppercase;color:rgba(255,255,255,.82);animation:gwUp 1.1s cubic-bezier(.16,1,.3,1) both">Nos casamos</p>
+      <h1 style="margin:0 0 38px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(52px,9.4vw,126px);line-height:1.06;letter-spacing:-.01em;animation:gwUp 1.2s cubic-bezier(.16,1,.3,1) .16s both">Valeria <span style="font-style:italic;font-weight:300">&amp;</span> David</h1>
+      <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(16px,3vw,32px);animation:gwUp 1.2s cubic-bezier(.16,1,.3,1) .34s both">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(19px,2.2vw,27px);letter-spacing:.16em">Sábado 6 de marzo</span>
+        <span style="width:44px;height:1px;background:rgba(255,255,255,.5)"></span>
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(19px,2.2vw,27px);letter-spacing:.16em">Villa Victoria, Lima</span>
+      </div>
+      <p style="margin:22px 0 0;font-size:10.5px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.62);animation:gwUp 1.2s cubic-bezier(.16,1,.3,1) .46s both">2027</p>
+    </div>
+    <div style="position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:center;pointer-events:none">
+      <div style="width:1px;height:54px;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.9));animation:gwCue 3.4s ease-in-out infinite"></div>
+    </div>
+  </section>
+
+  <section data-nostack="1" data-screen-label="Invitacion" style="position:relative;overflow:hidden;padding:clamp(78px,9vw,120px) 28px;background:#FAF7F2;text-align:center">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-03.png&quot;);background-repeat:no-repeat;background-position:right 2% bottom 0%;background-size:auto clamp(190px,22vw,300px);opacity:.28"></div>
+    <div data-reveal="1" style="position:relative;transition:opacity 1.1s ease,transform 1.1s ease;max-width:640px;margin:0 auto">
+      <div style="width:1px;height:56px;background:linear-gradient(180deg,rgba(169,139,93,0),#A98B5D);margin:0 auto 34px"></div>
+      <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(24px,3vw,32px);line-height:1.62;color:rgba(28,25,23,.86);text-wrap:pretty">Con mucha alegría queremos invitarte a celebrar nuestro matrimonio. Después de nueve años juntos, damos este paso rodeados de las personas que nos acompañaron en el camino.</p>
+      <p style="margin:34px 0 0;font-size:11px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:#A98B5D">Valeria Campos &amp; David Atoche</p>
+    </div>
+  </section>
+
+  <section id="lugar" data-screen-label="Lugar" style="position:relative;scroll-margin-top:86px;padding:clamp(96px,12vw,164px) 10px clamp(120px,15vw,210px);overflow:hidden;background:#D9CFC2">
+    <div style="position:absolute;inset:0;background-image:url(&quot;images/img-04.jpg&quot;);background-size:cover;background-position:78% 52%"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(58,52,42,.26),rgba(58,52,42,.1) 45%,rgba(58,52,42,.3))"></div>
+    <div data-reveal="1" style="position:relative;transition:opacity 1.3s ease,transform 1.3s ease;max-width:900px;margin:0 auto">
+      <img src="images/img-05.png" alt="" style="position:absolute;left:50%;top:clamp(-54px,-4.2vw,-34px);width:clamp(84px,8.2vw,116px);height:auto;transform:translateX(-50%);z-index:2;filter:drop-shadow(0 12px 18px rgba(40,34,24,.42))">
+      <div style="position:relative;padding:clamp(78px,8vw,112px) clamp(38px,7vw,104px) clamp(66px,7vw,96px);filter:drop-shadow(0 24px 44px rgba(48,40,28,.34))">
+        <img src="images/img-06.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none">
+        <div style="position:relative;text-align:center">
+          <h2 data-mask="1" style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(29px,4.4vw,50px);line-height:1.18;letter-spacing:-.01em;color:#26231F">Nos vemos para celebrar juntos!</h2>
+          <p style="margin:0 auto clamp(36px,4.4vw,50px);max-width:47ch;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(16px,1.8vw,20px);line-height:1.6;color:rgba(38,35,31,.74);text-wrap:balance">Será un día especial para nosotros y queremos compartirlo junto a cada uno de ustedes</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(22px,3.4vw,44px);padding-top:clamp(26px,3.4vw,34px);border-top:1px solid rgba(38,35,31,.16)">
+          <div style="flex:1 1 140px;min-width:124px;text-align:center">
+            <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.9vw,34px);line-height:1.1;letter-spacing:-.01em;color:#26231F">06 Marzo 27</p>
+            <p style="margin:0 0 5px;font-size:9px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A98B5D">La fecha</p>
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:14px;line-height:1.5;color:rgba(38,35,31,.68)">Sábado</p>
+          </div>
+          <div style="flex:1 1 140px;min-width:124px;text-align:center">
+            <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.9vw,34px);line-height:1.1;letter-spacing:-.01em;color:#26231F">16:00</p>
+            <p style="margin:0 0 5px;font-size:9px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A98B5D">La ceremonia</p>
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:14px;line-height:1.5;color:rgba(38,35,31,.68)">Llega 20 minutos antes</p>
+          </div>
+          <div style="flex:1 1 140px;min-width:124px;text-align:center">
+            <p style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.9vw,34px);line-height:1.1;letter-spacing:-.01em;color:#26231F">Villa Victoria</p>
+            <p style="margin:0 0 5px;font-size:9px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:#A98B5D">El lugar</p>
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:14px;line-height:1.5;color:rgba(38,35,31,.68)">Todo en el mismo jardín</p>
+          </div>
+          </div>
+          <a href="#llegar" style="display:inline-flex;align-items:center;gap:8px;margin-top:clamp(32px,3.8vw,44px);font-size:9.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap;color:#46603C;text-decoration:none;border-bottom:1px solid rgba(70,96,60,.45);padding-bottom:6px;transition:color .5s ease,border-color .5s ease" style-hover="color:#2E3A2A;border-color:#2E3A2A">
+            <svg sc-camel-view-box="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+            Ir al mapa
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rsvp" data-screen-label="Confirmar" style="position:relative;overflow:hidden;scroll-margin-top:86px;padding:clamp(48px,5.4vw,74px) 28px;background:#2E3A2A;color:#EEF0E7">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-07.png&quot;);background-repeat:no-repeat;background-position:left 2% bottom 3%;background-size:auto clamp(300px,42vw,560px);opacity:.2"></div>
+    <div style="position:relative;max-width:660px;margin:0 auto;text-align:center">
+      <div data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease">
+        <div style="width:1px;height:34px;background:linear-gradient(180deg,rgba(194,174,126,0),#C2AE7E);margin:0 auto 22px"></div>
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#C2AE7E">Antes que nada</p>
+        <h2 data-mask="1" style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.14">Confírmanos si vienes</h2>
+        <p style="margin:0 auto 30px;max-width:48ch;font-size:15px;line-height:1.8;color:rgba(238,240,231,.78);text-wrap:pretty">Necesitamos saber cuántos seremos para guardarte un sitio en la mesa. Te toma menos de un minuto.</p>
+      </div>
+      <form sc-camel-on-submit="{{ sendRsvp }}" data-reveal="1" data-delay="120" style="transition:opacity 1.1s ease,transform 1.1s ease;display:flex;flex-direction:column;gap:20px;text-align:left">
+        <input name="nombre" placeholder="Nombre y apellido" style="background:transparent;border:0;border-bottom:1px solid rgba(238,240,231,.3);padding:13px 2px;color:#EEF0E7">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px">
+          <sc-raw-select name="asistencia" style="background:#2E3A2A;border:0;border-bottom:1px solid rgba(238,240,231,.3);padding:13px 2px;color:#EEF0E7">
+            <option value="Sí, asistiré">Sí, asistiré</option>
+            <option value="No podré asistir">No podré asistir</option>
+          </sc-raw-select>
+          <sc-raw-select name="acompanantes" style="background:#2E3A2A;border:0;border-bottom:1px solid rgba(238,240,231,.3);padding:13px 2px;color:#EEF0E7">
+            <option value="0">Vengo solo/a</option>
+            <option value="1">1 acompañante</option>
+            <option value="2">2 acompañantes</option>
+          </sc-raw-select>
+        </div>
+        <textarea name="mensaje" rows="3" placeholder="Restricciones alimentarias o un mensaje para los novios" style="background:transparent;border:0;border-bottom:1px solid rgba(238,240,231,.3);padding:13px 2px;color:#EEF0E7;resize:vertical"></textarea>
+        <button type="submit" style="margin-top:16px;align-self:center;cursor:pointer;background:#EEF0E7;color:#2E3A2A;border:1px solid #EEF0E7;border-radius:999px;padding:16px 42px;font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;transition:background .5s ease,color .5s ease,border-color .5s ease,transform .5s ease" style-hover="background:#C2AE7E;border-color:#C2AE7E;transform:translateY(-3px)">Enviar confirmación</button>
+      </form>
+      <p style="margin:22px 0 0;min-height:16px;font-size:12.5px;color:rgba(238,240,231,.75)">{{ rsvpMsg }}</p>
+      <p style="margin:14px 0 0;font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(238,240,231,.45)">Hasta el 5 de febrero de 2027</p>
+    </div>
+  </section>
+
+  <section data-nostack="1" id="galeria" data-screen-label="Galeria" style="scroll-margin-top:86px;padding:clamp(70px,8vw,106px) 0;background:#FAF7F2">
+    <div style="position:relative;overflow:hidden;width:100%">
+      <div id="gwTrack" style="display:flex;width:max-content;gap:14px;padding:0 7px">
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c1" shape="rect" fit="cover" src="images/img-08.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c2" shape="rect" fit="cover" src="images/img-09.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c3" shape="rect" fit="cover" src="images/img-10.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c4" shape="rect" fit="cover" src="images/img-11.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c5" shape="rect" fit="cover" src="images/img-12.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c6" shape="rect" fit="cover" src="images/img-13.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c7" shape="rect" fit="cover" src="images/img-14.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c8" shape="rect" fit="cover" src="images/img-15.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c9" shape="rect" fit="cover" src="images/img-16.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c10" shape="rect" fit="cover" src="images/img-17.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c11" shape="rect" fit="cover" src="images/img-18.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+        <div style="flex:0 0 auto;width:clamp(210px,23vw,330px);height:clamp(290px,40vw,440px);overflow:hidden"><image-slot loading="lazy" id="gw-c12" shape="rect" fit="cover" src="images/img-19.jpg" placeholder="Foto" data-para="0.06"></image-slot></div>
+      </div>
+    </div>
+    <div style="max-width:1120px;margin:0 auto;padding:clamp(60px,8vw,100px) 28px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(34px,5vw,64px);align-items:center">
+      <div data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease">
+        <p style="margin:0 0 18px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(28,25,23,.55)">Nuestra historia</p>
+        <h2 data-mask="1" style="margin:0 0 26px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.8vw,54px);line-height:1.16;letter-spacing:-.01em">Nueve años después, la misma respuesta</h2>
+        <p style="margin:0 0 20px;max-width:46ch;font-size:15px;line-height:1.8;color:rgba(28,25,23,.82);text-wrap:pretty">Nos conocimos un martes cualquiera en una cafetería de Barranco, esperando la misma mesa junto a la ventana. Terminamos compartiéndola y no volvimos a separarnos.</p>
+        <p style="margin:0 0 30px;max-width:46ch;font-size:15px;line-height:1.8;color:rgba(28,25,23,.82);text-wrap:pretty">Después de dos mudanzas, un perro y muchos viajes, queremos celebrar el día más importante con ustedes.</p>
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:25px;line-height:1.6;color:#A98B5D">“Elegirte otra vez, y todas las veces.”</p>
+      </div>
+      <div data-reveal="1" data-delay="130" style="transition:opacity 1.2s ease,transform 1.2s ease">
+        <div style="position:relative;width:100%;max-width:410px;margin:0 auto">
+          <img src="images/img-20.png" alt="Nuestras manos" style="display:block;width:100%;height:auto;filter:drop-shadow(0 18px 32px rgba(60,50,34,.2))">
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1080px;margin:0 auto;padding:clamp(40px,5vw,64px) 28px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;align-items:start">
+      <div data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease;margin-top:clamp(0px,4vw,52px);aspect-ratio:3/4;overflow:hidden">
+        <image-slot loading="lazy" id="gw-t1" shape="rect" fit="cover" src="images/img-21.jpg" data-para="0.06" placeholder="El lugar"></image-slot>
+      </div>
+      <div data-reveal="1" data-delay="120" style="transition:opacity 1.1s ease,transform 1.1s ease;aspect-ratio:4/5;overflow:hidden">
+        <image-slot loading="lazy" id="gw-t2" shape="rect" fit="cover" src="images/img-22.jpg" data-para="0.07" placeholder="Retrato"></image-slot>
+      </div>
+      <div data-reveal="1" data-delay="240" style="transition:opacity 1.1s ease,transform 1.1s ease;margin-top:clamp(0px,3vw,32px);aspect-ratio:3/4;overflow:hidden">
+        <image-slot loading="lazy" id="gw-t3" shape="rect" fit="cover" src="images/img-23.jpg" data-para="0.06" placeholder="Con amigos"></image-slot>
+      </div>
+    </div>
+  </section>
+
+  <section id="itinerario" data-screen-label="Itinerario" style="position:relative;overflow:hidden;scroll-margin-top:86px;padding:clamp(78px,9vw,124px) 28px;background:#2E3A2A;color:#EEF0E7">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-24.png&quot;);background-repeat:no-repeat;background-position:right 3% top 4%;background-size:auto clamp(280px,38vw,500px);opacity:.42"></div>
+    <div style="position:relative;max-width:980px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:56px">
+        <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:rgba(238,240,231,.5)">— Itinerario —</p>
+        <h2 data-mask="1" style="margin:0 0 16px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.8vw,52px);line-height:1.2">Lo que compartiremos ese día</h2>
+        <p style="margin:0 auto;max-width:44ch;font-size:14.5px;line-height:1.7;color:rgba(238,240,231,.75)">La ceremonia empieza puntual. Te pedimos llegar 20 minutos antes para acomodarte con calma.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;align-items:center;gap:clamp(20px,4vw,44px);padding:32px 8px;border-top:1px solid rgba(238,240,231,.18);transition:padding-left .55s ease,background .55s ease" style-hover="padding-left:22px;background:rgba(194,174,126,.14)">
+          <div style="flex:0 0 22%;min-width:110px">
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,6vw,58px);line-height:1;color:#EEF0E7">16:00</p>
+            <p style="margin:6px 0 0;font-size:9px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(238,240,231,.45)">Tarde</p>
+          </div>
+          <div>
+            <h3 style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">La ceremonia</h3>
+            <p style="margin:0;max-width:52ch;font-size:14px;line-height:1.7;color:rgba(238,240,231,.75)">Nos casamos en el jardín de Villa Victoria. Toma asiento antes de las 3:45 p.m.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:clamp(20px,4vw,44px);padding:32px 8px;border-top:1px solid rgba(238,240,231,.18);transition:padding-left .55s ease,background .55s ease" style-hover="padding-left:22px;background:rgba(194,174,126,.14)">
+          <div style="flex:0 0 22%;min-width:110px">
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,6vw,58px);line-height:1;color:#EEF0E7">18:30</p>
+            <p style="margin:6px 0 0;font-size:9px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(238,240,231,.45)">Noche</p>
+          </div>
+          <div>
+            <h3 style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">Recepción y cena</h3>
+            <p style="margin:0;max-width:52ch;font-size:14px;line-height:1.7;color:rgba(238,240,231,.75)">Entramos al salón, brindis de los padrinos y cena servida en mesas asignadas.</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:clamp(20px,4vw,44px);padding:32px 8px;border-top:1px solid rgba(238,240,231,.18);border-bottom:1px solid rgba(238,240,231,.18);transition:padding-left .55s ease,background .55s ease" style-hover="padding-left:22px;background:rgba(194,174,126,.14)">
+          <div style="flex:0 0 22%;min-width:110px">
+            <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,6vw,58px);line-height:1;color:#EEF0E7">20:00</p>
+            <p style="margin:6px 0 0;font-size:9px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(238,240,231,.45)">Noche</p>
+          </div>
+          <div>
+            <h3 style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">Empieza la fiesta:</h3>
+            <p style="margin:0;max-width:52ch;font-size:14px;line-height:1.7;color:rgba(238,240,231,.75)">Abrimos la pista para celebrar juntos! La fiesta acaba a las <strong style="font-weight:700;color:#EEF0E7">1am</strong>, toma tus precauciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-nostack="1" id="llegar" data-screen-label="Como llegar" style="scroll-margin-top:86px;padding:clamp(78px,9vw,120px) 28px;background:#FAF7F2">
+    <div style="max-width:1180px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:48px">
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(28,25,23,.55)">Cómo llegar</p>
+        <h2 data-mask="1" style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.18">Todo en un mismo jardín</h2>
+        <p style="margin:0 auto;max-width:52ch;font-size:15px;line-height:1.8;color:rgba(28,25,23,.78);text-wrap:pretty">La ceremonia y la recepción son en Villa Victoria, así que no tienes que moverte de un lugar a otro.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:24px;align-items:stretch">
+        <div data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease;background:#FFFFFF;border:1px solid rgba(28,25,23,.1);display:flex;flex-direction:column">
+          <iframe src="https://www.google.com/maps?q=Av.+El+Golf+Los+Incas+590+Santiago+de+Surco+Lima&amp;output=embed" style="width:100%;height:290px;border:0;filter:grayscale(30%) contrast(.95)" loading="lazy" title="Mapa de Villa Victoria"></iframe>
+          <div style="padding:30px 32px 34px">
+            <p style="margin:0 0 12px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A98B5D">Ceremonia 4:00 p.m. · Recepción 6:30 p.m.</p>
+            <h3 style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:31px">Villa Victoria</h3>
+            <p style="margin:0 0 22px;font-size:14px;line-height:1.7;color:rgba(28,25,23,.72)">Av. El Golf Los Incas 590, Surco, Lima.<br>Valet parking desde las 3:30 p.m.</p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+El+Golf+Los+Incas+590+Santiago+de+Surco+Lima" target="_blank" rel="noopener" style="display:inline-block;color:#1C1917;border:1px solid rgba(28,25,23,.24);border-radius:999px;padding:11px 26px;font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:background .5s ease,color .5s ease,border-color .5s ease" style-hover="background:#1C1917;color:#FAF7F2;border-color:#1C1917">Abrir mapa</a>
+          </div>
+        </div>
+        <div data-reveal="1" data-delay="130" style="transition:opacity 1.1s ease,transform 1.1s ease;position:relative;min-height:420px;overflow:hidden">
+          <image-slot loading="lazy" id="gw-jardin" shape="rect" fit="cover" src="images/img-25.jpg" data-para="0.07" placeholder="El jardín"></image-slot>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:24px">
+        <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;border:1px solid rgba(28,25,23,.14);padding:30px 28px;transition:border-color .6s ease,background .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="border-color:#A98B5D;background:#FFFFFF;transform:translateY(-4px)">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(28,25,23,.5)">Código de vestimenta</p>
+          <h3 style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">Formal de jardín</h3>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:rgba(28,25,23,.7)">Tonos tierra bienvenidos. El piso es de grava: tacón ancho o sandalia plana.</p>
+        </div>
+        <div data-reveal="1" data-delay="110" style="transition:opacity 1s ease,transform 1s ease;border:1px solid rgba(28,25,23,.14);padding:30px 28px;transition:border-color .6s ease,background .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="border-color:#A98B5D;background:#FFFFFF;transform:translateY(-4px)">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(28,25,23,.5)">Transporte</p>
+          <h3 style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">Valet y movilidad</h3>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:rgba(28,25,23,.7)">Valet parking sin costo desde las 3:30 p.m. Movilidad de regreso a la 1:00 y a las 2:15 a.m.</p>
+        </div>
+        <div data-reveal="1" data-delay="220" style="transition:opacity 1s ease,transform 1s ease;border:1px solid rgba(28,25,23,.14);padding:30px 28px;transition:border-color .6s ease,background .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="border-color:#A98B5D;background:#FFFFFF;transform:translateY(-4px)">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(28,25,23,.5)">Clima</p>
+          <h3 style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px">24° de día, 18° de noche</h3>
+          <p style="margin:0;font-size:14px;line-height:1.75;color:rgba(28,25,23,.7)">Marzo en Lima refresca al caer el sol y la fiesta es al aire libre. Trae algo de abrigo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-nostack="1" id="regalos" data-screen-label="Regalos" style="position:relative;overflow:hidden;scroll-margin-top:86px;padding:clamp(78px,9vw,120px) 28px;background:#2E3A2A;color:#EEF0E7">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-24.png&quot;);background-repeat:no-repeat;background-position:left 3% top 4%;background-size:auto clamp(260px,34vw,460px);opacity:.4"></div>
+    <div style="position:relative;max-width:1060px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:52px">
+        <div style="width:1px;height:48px;background:linear-gradient(180deg,rgba(194,174,126,0),#C2AE7E);margin:0 auto 30px"></div>
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(238,240,231,.6)">Un detalle</p>
+        <h2 data-mask="1" style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.18">Tu presencia es el regalo</h2>
+        <p style="margin:0 auto;max-width:50ch;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:23px;line-height:1.7;color:rgba(238,240,231,.82);text-wrap:pretty">Si quieres acompañarnos con algo más, aquí dejamos nuestras cuentas. Lo recibimos con mucho cariño y sin apuros.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:0;margin:-8px">
+        <div data-copy-card="1" data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease;background:transparent;padding:40px 32px 36px;text-align:center;border:1px solid rgba(238,240,231,.28);margin:8px;color:#EEF0E7;transition:background .6s ease,border-color .6s ease,color .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFFFFF;border-color:#FFFFFF;color:#2E3A2A;transform:translateY(-4px)">
+          <p style="margin:0 0 20px;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:inherit;opacity:.72">Yape y Plin</p>
+          <p data-copy-value="1" style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:31px;color:inherit">987 654 321</p>
+          <p style="margin:0 0 6px;font-size:13.5px;color:inherit;opacity:.75">Valeria Campos</p>
+          <p style="margin:0 0 26px;font-size:12.5px;line-height:1.6;color:inherit;opacity:.55">El mismo número funciona en las dos apps.</p>
+          <button type="button" sc-camel-on-click="{{ copy }}" style="cursor:pointer;background:transparent;color:inherit;border:1px solid currentColor;border-radius:999px;padding:11px 24px;font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:background .5s ease,color .5s ease,border-color .5s ease" style-hover="background:#A98B5D;color:#FFFFFF;border-color:#C2AE7E">Copiar número</button>
+          <p style="margin:16px 0 0;height:14px;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:inherit;opacity:.72">{{ copiedYape }}</p>
+        </div>
+        <div data-copy-card="1" data-reveal="1" data-delay="110" style="transition:opacity 1.1s ease,transform 1.1s ease;background:transparent;padding:40px 32px 36px;text-align:center;border:1px solid rgba(238,240,231,.28);margin:8px;color:#EEF0E7;transition:background .6s ease,border-color .6s ease,color .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFFFFF;border-color:#FFFFFF;color:#2E3A2A;transform:translateY(-4px)">
+          <p style="margin:0 0 20px;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:inherit;opacity:.72">Soles · BCP</p>
+          <p data-copy-value="1" style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;color:inherit">191-1234567-0-89</p>
+          <p style="margin:0 0 6px;font-size:12.5px;color:inherit;opacity:.6">CCI 002-191-001234567089-51</p>
+          <p style="margin:0 0 26px;font-size:13.5px;color:inherit;opacity:.75">Valeria Campos</p>
+          <button type="button" sc-camel-on-click="{{ copy }}" style="cursor:pointer;background:transparent;color:inherit;border:1px solid currentColor;border-radius:999px;padding:11px 24px;font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:background .5s ease,color .5s ease,border-color .5s ease" style-hover="background:#A98B5D;color:#FFFFFF;border-color:#C2AE7E">Copiar cuenta</button>
+          <p style="margin:16px 0 0;height:14px;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:inherit;opacity:.72">{{ copiedPlin }}</p>
+        </div>
+        <div data-copy-card="1" data-reveal="1" data-delay="220" style="transition:opacity 1.1s ease,transform 1.1s ease;background:transparent;padding:40px 32px 36px;text-align:center;border:1px solid rgba(238,240,231,.28);margin:8px;color:#EEF0E7;transition:background .6s ease,border-color .6s ease,color .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)" style-hover="background:#FFFFFF;border-color:#FFFFFF;color:#2E3A2A;transform:translateY(-4px)">
+          <p style="margin:0 0 20px;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:inherit;opacity:.72">Dólares · Interbank</p>
+          <p data-copy-value="1" style="margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;color:inherit">200-3009876543</p>
+          <p style="margin:0 0 6px;font-size:12.5px;color:inherit;opacity:.6">CCI 003-200-003009876543-38</p>
+          <p style="margin:0 0 26px;font-size:13.5px;color:inherit;opacity:.75">David Atoche</p>
+          <button type="button" sc-camel-on-click="{{ copy }}" style="cursor:pointer;background:transparent;color:inherit;border:1px solid currentColor;border-radius:999px;padding:11px 24px;font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:background .5s ease,color .5s ease,border-color .5s ease" style-hover="background:#A98B5D;color:#FFFFFF;border-color:#C2AE7E">Copiar cuenta</button>
+          <p style="margin:16px 0 0;height:14px;font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:inherit;opacity:.72">{{ copiedCuenta }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-nostack="1" id="musica" data-screen-label="Playlist" style="position:relative;overflow:hidden;scroll-margin-top:86px;padding:clamp(78px,9vw,124px) 28px;background:#FAF7F2">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-03.png&quot;);background-repeat:no-repeat;background-position:left 3% top 5%;background-size:auto clamp(220px,26vw,360px);opacity:.4"></div>
+    <div style="position:relative;max-width:1120px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:48px">
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(28,25,23,.55)">Playlist colaborativa</p>
+        <h2 data-mask="1" style="margin:0 0 20px;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.18">Ayúdanos a armar la fiesta</h2>
+        <p style="margin:0 auto;max-width:54ch;font-size:15px;line-height:1.8;color:rgba(28,25,23,.78);text-wrap:pretty">Creamos una playlist colaborativa en Spotify para bailar toda la noche. Cualquiera puede sumar canciones.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(24px,3vw,40px);align-items:start">
+        <div data-reveal="1" style="transition:opacity 1.1s ease,transform 1.1s ease">
+          <iframe src="https://open.spotify.com/embed/playlist/{{ playlistId }}?theme=0" style="width:100%;height:380px;border:0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Playlist de la boda"></iframe>
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px 24px;margin-top:18px">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:11.5px;line-height:1.6;color:rgba(28,25,23,.62)"><span style="color:#A98B5D">1.</span> Abre la playlist y toca “Seguir”</span>
+              <span style="font-size:11.5px;line-height:1.6;color:rgba(28,25,23,.62)"><span style="color:#A98B5D">2.</span> Activa “Colaborar” en el menú (⋯)</span>
+              <span style="font-size:11.5px;line-height:1.6;color:rgba(28,25,23,.62)"><span style="color:#A98B5D">3.</span> Agrega hasta 3 canciones</span>
+            </div>
+            <a href="{{ playlistUrl }}" target="_blank" rel="noopener" style="flex:0 0 auto;color:#1C1917;border-bottom:1px solid rgba(28,25,23,.28);padding-bottom:5px;font-size:10px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:color .5s ease,border-color .5s ease" style-hover="color:#A98B5D;border-color:#A98B5D">Abrir la playlist</a>
+          </div>
+        </div>
+        <div data-reveal="1" data-delay="130" style="transition:opacity 1.1s ease,transform 1.1s ease;background:#FFFFFF;border:1px solid rgba(28,25,23,.1);border-radius:10px;padding:clamp(26px,3vw,36px) clamp(22px,2.6vw,32px) clamp(28px,3vw,34px)">
+          <p style="margin:0 0 12px;font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#A98B5D">Votación de géneros</p>
+          <p style="margin:0 0 24px;font-size:12.5px;line-height:1.7;color:rgba(28,25,23,.65);text-wrap:pretty">Hasta tres votos por persona. El resultado manda en la pista.</p>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <sc-for list="{{ generos }}" as="g" hint-placeholder-count="6">
+              <button type="button" sc-camel-on-click="{{ g.vote }}" style="position:relative;display:block;width:100%;text-align:left;overflow:hidden;cursor:pointer;background:{{ g.rowBg }};border:1px solid rgba(28,25,23,.1);border-radius:6px;padding:0;transition:border-color .5s ease,background .6s ease" style-hover="border-color:#A98B5D">
+                <span style="position:absolute;left:0;top:0;bottom:0;background:{{ g.fill }};width:{{ g.w }};transition:width 1s cubic-bezier(.22,.61,.36,1)"></span>
+                <span style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:12px 16px">
+                  <span style="display:flex;align-items:baseline;gap:12px;min-width:0">
+                    <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(15px,1.6vw,19px);color:{{ g.textColor }}">{{ g.name }}</span>
+                    <span style="font-size:8px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:{{ g.tagColor }}">{{ g.tag }}</span>
+                  </span>
+                  <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(15px,1.7vw,19px);color:{{ g.textColor }};min-width:44px;text-align:right">{{ g.pct }}</span>
+                </span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:18px">
+            <p style="margin:0;min-height:14px;font-size:11.5px;color:rgba(28,25,23,.68)">{{ genreMsg }}</p>
+            <p style="margin:0;font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(28,25,23,.5)">{{ genreLeader }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-nostack="1" data-screen-label="Postal" style="position:relative;overflow:hidden;padding:clamp(110px,14vw,190px) 24px clamp(80px,9vw,120px);background:#D8CFC3">
+    <div style="position:absolute;inset:0;background-image:url(&quot;images/img-26.jpg&quot;);background-size:cover;background-position:50% 46%"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(52,46,38,.22),rgba(52,46,38,.08) 45%,rgba(52,46,38,.28))"></div>
+    <div data-reveal="1" style="position:relative;transition:opacity 1.3s ease,transform 1.3s ease;width:100%;max-width:clamp(260px,30vw,360px);margin:0 auto">
+      <div style="position:relative;aspect-ratio:1080/1350;animation:gwFloat 9s ease-in-out infinite;filter:drop-shadow(0 22px 40px rgba(46,38,26,.34))">
+        <img src="images/img-27.png" alt="" style="position:absolute;inset:0;width:100%;height:100%">
+        <div style="position:absolute;left:19.25%;right:19.25%;top:11.5%;bottom:20.5%;overflow:hidden;background:#EDE6D8">
+            <img src="images/img-28.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 0s infinite both">
+            <img src="images/img-29.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 2s infinite both">
+            <img src="images/img-30.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 4s infinite both">
+            <img src="images/img-31.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 6s infinite both">
+            <img src="images/img-32.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 8s infinite both">
+            <img src="images/img-33.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 10s infinite both">
+            <img src="images/img-34.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 12s infinite both">
+            <img src="images/img-35.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 14s infinite both">
+            <img src="images/img-36.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 16s infinite both">
+            <img src="images/img-37.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 18s infinite both">
+            <img src="images/img-38.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 20s infinite both">
+            <img src="images/img-39.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gwGif 24s linear 22s infinite both">
+        </div>
+      </div>
+      <p style="margin:14px auto 0;width:100%;text-align:center;font-family:'Manrope',sans-serif;font-weight:400;font-size:clamp(19px,2vw,25px);line-height:1.4;letter-spacing:.02em;color:#FFF8EC">¡Te esperamos para<br>compartir, este gran día!</p>
+    </div>
+  </section>
+
+  <section data-nostack="1" id="dudas" data-screen-label="Dudas" style="position:relative;overflow:hidden;scroll-margin-top:86px;padding:clamp(78px,9vw,116px) 28px;background:#FFFFFF">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-03.png&quot;);background-repeat:no-repeat;background-position:left -2% center;background-size:auto clamp(240px,30vw,430px);opacity:.6;transform:scaleX(-1)"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:clamp(40px,5vw,58px)">
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(28,25,23,.55)">Bueno por saber</p>
+        <h2 data-mask="1" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.14">Preguntas frecuentes</h2>
+      </div>
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;display:flex;flex-direction:column;border-bottom:1px solid rgba(28,25,23,.16)">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+          <div style="border-top:1px solid rgba(28,25,23,.16)">
+            <button type="button" sc-camel-on-click="{{ f.toggle }}" style="display:flex;width:100%;align-items:center;justify-content:space-between;gap:24px;background:transparent;border:0;padding:26px 4px;cursor:pointer;text-align:left;transition:padding-left .55s ease" style-hover="padding-left:12px">
+              <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(21px,2.4vw,27px);line-height:1.25;color:#1C1917">{{ f.q }}</span>
+              <span style="flex:0 0 auto;font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1;color:#A98B5D;transition:transform .6s cubic-bezier(.22,.61,.36,1);transform:{{ f.rot }}">+</span>
+            </button>
+            <div style="overflow:hidden;max-height:{{ f.maxH }};opacity:{{ f.op }};transition:max-height .75s cubic-bezier(.22,.61,.36,1),opacity .6s ease">
+              <p style="margin:0 0 28px;max-width:62ch;font-size:14px;line-height:1.85;color:rgba(28,25,23,.7)">{{ f.a }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      </div>
+    </section></div>
+  
+
+  <section data-nostack="1" data-screen-label="Resumen" style="padding:clamp(78px,9vw,118px) 28px;background:#F3EDE4">
+    <div style="max-width:1060px;margin:0 auto">
+      <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;text-align:center;margin-bottom:50px">
+        <p style="margin:0 0 16px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(28,25,23,.55)">Un resumen de</p>
+        <h2 data-mask="1" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(33px,5vw,56px);line-height:1.14">Lo que necesitas saber</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0">
+        <div data-reveal="1" style="transition:opacity 1s ease,transform 1s ease;background:#F3EDE4;padding:34px 28px;text-align:center;border:1px solid rgba(28,25,23,.14);margin:-0.5px;transition:background .6s ease" style-hover="background:#FAF7F2">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A98B5D">Cuándo</p>
+          <p style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:27px;line-height:1.2">Sábado 6 de marzo</p>
+          <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(28,25,23,.7)">2027 · 4:00 p.m.</p>
+        </div>
+        <div data-reveal="1" data-delay="90" style="transition:opacity 1s ease,transform 1s ease;background:#F3EDE4;padding:34px 28px;text-align:center;border:1px solid rgba(28,25,23,.14);margin:-0.5px;transition:background .6s ease" style-hover="background:#FAF7F2">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A98B5D">Dónde</p>
+          <p style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:27px;line-height:1.2">Villa Victoria</p>
+          <p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:rgba(28,25,23,.7)">Av. El Golf Los Incas 590<br>Surco, Lima</p>
+          <p style="margin:0;font-size:14px;line-height:1.7"><a href="#llegar" style="border-bottom:1px solid rgba(169,139,93,.5);padding-bottom:2px">Ir al mapa</a></p>
+        </div>
+        <div data-reveal="1" data-delay="180" style="transition:opacity 1s ease,transform 1s ease;background:#F3EDE4;padding:34px 28px;text-align:center;border:1px solid rgba(28,25,23,.14);margin:-0.5px;transition:background .6s ease" style-hover="background:#FAF7F2">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A98B5D">Vestimenta</p>
+          <p style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:27px;line-height:1.2">Formal de jardín</p>
+          <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(28,25,23,.7)">Blanco y beige reservados<br>para la novia</p>
+        </div>
+        <div data-reveal="1" data-delay="270" style="transition:opacity 1s ease,transform 1s ease;background:#F3EDE4;padding:34px 28px;text-align:center;border:1px solid rgba(28,25,23,.14);margin:-0.5px;transition:background .6s ease" style-hover="background:#FAF7F2">
+          <p style="margin:0 0 14px;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#A98B5D">Confirmación</p>
+          <p style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:27px;line-height:1.2">Hasta el 5 de febrero</p>
+          <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(28,25,23,.7)"><a href="#rsvp" style="border-bottom:1px solid rgba(169,139,93,.5);padding-bottom:2px">Ir al formulario</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer data-nostack="1" data-screen-label="Footer" style="position:relative;overflow:hidden;background:#2E3A2A;color:#EEF0E7;padding:0 0 46px">
+    <div style="position:absolute;inset:0;pointer-events:none;background-image:url(&quot;images/img-40.png&quot;);background-repeat:repeat;background-size:clamp(360px,40vw,520px);opacity:.14;mask-image:radial-gradient(150% 130% at 50% 100%,#000 0%,transparent 92%);-webkit-mask-image:radial-gradient(150% 130% at 50% 100%,#000 0%,transparent 92%)"></div>
+    <div style="position:relative;border-top:1px solid rgba(250,247,242,.14);border-bottom:1px solid rgba(250,247,242,.14);overflow:hidden;padding:18px 0;margin-bottom:52px">
+      <div style="display:flex;width:max-content;animation:gwMarquee 30s linear infinite">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:27px;white-space:nowrap;color:rgba(250,247,242,.55);padding-right:36px">Valeria &amp; David · 6 de Marzo 2027 · Valeria &amp; David · 6 de Marzo 2027 ·&nbsp;</span>
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:27px;white-space:nowrap;color:rgba(250,247,242,.55);padding-right:36px">Valeria &amp; David · 6 de Marzo 2027 · Valeria &amp; David · 6 de Marzo 2027 ·&nbsp;</span>
+      </div>
+    </div>
+    <div data-reveal="1" style="position:relative;transition:opacity 1s ease,transform 1s ease;text-align:center;padding:0 28px">
+      <p style="margin:0 auto 24px;width:78px;height:78px;border:1px solid rgba(250,247,242,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:17px;letter-spacing:.14em;transition:transform .8s cubic-bezier(.22,.61,.36,1),border-color .8s ease" style-hover="transform:rotate(-7deg) scale(1.06);border-color:#A98B5D">V D</p>
+      <p style="margin:0 0 12px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:26px;color:rgba(250,247,242,.85)">Gracias por celebrar con nosotros</p>
+      <p style="margin:0;font-size:10.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(250,247,242,.45)">Valeria &amp; David · Lima, Perú</p>
+    </div>
+  </footer>
+
+
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;supabaseUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Votación&quot;},&quot;supabaseKey&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Votación&quot;},&quot;tablaGeneros&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;generos&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Votación&quot;},&quot;spotifyPlaylistId&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;37i9dQZF1DXcBWIGoYBM5M&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Playlist&quot;},&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;51987654321&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;RSVP&quot;}}">
+class Component extends DCLogic {
+  state = { copied: '', rsvpMsg: '', generos: [], myGenres: [], genreMsg: '', faqOpen: null };
+
+  GENEROS = [
+    { name: 'Cumbia', tag: 'Clásico' },
+    { name: 'Salsa', tag: 'Para los papás' },
+    { name: 'Reguetón', tag: 'Después de medianoche' },
+    { name: 'Latin Pop', tag: 'Seguro' },
+    { name: 'Rock en español', tag: 'Coros' },
+    { name: 'Electrónica', tag: 'Cierre' }
+  ];
+  KEY = 'boda-vd-gw-v1';
+  TARGET = new Date('2027-03-06T16:00:00-05:00').getTime();
+
+  setupIntro() {
+    const gate = document.getElementById('gwIntro');
+    const vid = document.getElementById('gwIntroVid');
+    if (!gate) return;
+    // el héroe espera: se guardan sus animaciones y se disparan al disolver el video
+    const held = [];
+    document.querySelectorAll('#gwtop [style*="animation:gw"]').forEach((el) => {
+      held.push([el, el.style.animation]);
+      el.style.animation = 'none';
+    });
+    this.introHeld = held;
+    document.documentElement.style.overflow = 'hidden';
+    let closed = false;
+    this.closeIntro = () => {
+      if (closed) return;
+      closed = true;
+      gate.style.opacity = '0';
+      gate.style.pointerEvents = 'none';
+      document.documentElement.style.overflow = '';
+      window.scrollTo(0, 0);
+      held.forEach(([el, anim]) => {
+        el.style.animation = 'none';
+        void el.offsetWidth;
+        el.style.animation = anim;
+      });
+      setTimeout(() => { gate.style.display = 'none'; if (vid) { try { vid.pause(); } catch (e) {} } }, 1700);
+    };
+    if (!vid) { this.closeIntro(); return; }
+    vid.muted = true;
+    // arranca el desvanecido 1.5 s antes del final para que empalme con el héroe
+    vid.addEventListener('timeupdate', () => {
+      if (vid.duration && vid.duration - vid.currentTime <= 1.5) this.closeIntro();
+    });
+    vid.addEventListener('ended', this.closeIntro);
+    vid.addEventListener('error', this.closeIntro);
+    const play = vid.play();
+    if (play && play.catch) play.catch(() => this.closeIntro());
+    this.introSafety = setTimeout(() => { if (vid.paused && !vid.currentTime) this.closeIntro(); }, 2500);
+  }
+
+  componentDidMount() {
+    this.setupIntro();
+    try {
+      const raw = localStorage.getItem(this.KEY);
+      if (raw) {
+        const d = JSON.parse(raw);
+        const names = this.GENEROS.map((g) => g.name);
+        const rows = (Array.isArray(d.generos) ? d.generos : []).filter((r) => r && names.indexOf(r.genero) !== -1);
+        const stored = (Array.isArray(d.myGenres) ? d.myGenres : (d.myGenre ? [d.myGenre] : [])).filter((n) => names.indexOf(n) !== -1);
+        // sin base de datos, cada fila guardada es un voto propio: así los dos conteos no pueden divergir
+        const mine = this.remote() ? stored : rows.map((r) => r.genero);
+        this.setState({ generos: rows, myGenres: mine });
+      }
+    } catch (e) {}
+    this.loadVotes();
+    if (this.remote()) this.poll = setInterval(() => this.loadVotes(), 20000);
+    this.timer = setInterval(() => this.tickCountdown(), 1000);
+    this.tickCountdown();
+    this.onScroll = (y) => {
+      const bg = document.getElementById('gwHeroBg');
+      if (bg) {
+        const over = Math.max(0, bg.offsetHeight - (bg.parentElement ? bg.parentElement.offsetHeight : bg.offsetHeight));
+        bg.style.transform = 'translate3d(0,' + Math.min(y * 0.17, over * 0.85).toFixed(1) + 'px,0)';
+      }
+      const anchor = document.getElementById('gwtop');
+      const root = anchor && anchor.parentElement;
+      const prog = document.getElementById('gwProg');
+      if (prog && root) {
+        const max = Math.max(1, root.getBoundingClientRect().height - window.innerHeight);
+        prog.style.width = Math.min(100, Math.max(0, (y / max) * 100)).toFixed(2) + '%';
+      }
+      const vh = window.innerHeight;
+      document.querySelectorAll('[data-para]').forEach((el) => {
+        const box = el.parentElement || el;
+        const r = box.getBoundingClientRect();
+        if (r.bottom < -240 || r.top > vh + 240) return;
+        const k = parseFloat(el.getAttribute('data-para')) || 0.06;
+        const SCALE = 1.2;
+        const own = el.offsetHeight || r.height;
+        const maxT = own * (SCALE - 1) / 2;
+        const t = Math.max(-1, Math.min(1, ((r.top + r.height / 2) - vh / 2) / (vh / 2 + r.height / 2)));
+        const ty = Math.max(-maxT, Math.min(maxT, -t * Math.min(maxT, own * k * 3.2)));
+        el.style.willChange = 'transform';
+        el.style.transform = 'translate3d(0,' + ty.toFixed(1) + 'px,0) scale(' + SCALE + ')';
+      });
+      // la sección que queda debajo se oscurece mientras la siguiente la cubre
+      if (this.stack) {
+        for (let i = 0; i < this.stack.length; i++) {
+          const s = this.stack[i];
+          let nx = null;
+          for (let n = i + 1; n < this.stack.length; n++) {
+            if (this.stack[n].offsetHeight > 0) { nx = this.stack[n]; break; }
+          }
+          if (!nx || s.offsetHeight === 0 || s.hasAttribute('data-nostack')) { s.style.filter = ''; continue; }
+          const nr = nx.getBoundingClientRect();
+          if (nr.top > vh) { s.style.filter = ''; continue; }
+          if (nr.top < 0) { s.style.filter = 'brightness(.82)'; continue; }
+          s.style.filter = 'brightness(' + (1 - 0.18 * (1 - nr.top / vh)).toFixed(3) + ')';
+        }
+      }
+      const nav = document.getElementById('gwNav');
+      if (nav) {
+        const solid = y > 70;
+        nav.style.background = solid ? 'rgba(250,247,242,0.94)' : 'rgba(250,247,242,0)';
+        nav.style.color = solid ? '#1C1917' : '#FFFFFF';
+        nav.style.borderBottomColor = solid ? 'rgba(28,25,23,0.1)' : 'transparent';
+      }
+    };
+    // sin animación cuando el documento está oculto o el usuario pidió menos movimiento
+    this.noAnim = !!document.hidden || !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    this.ticks = 0;
+    this.onVis = () => { if (document.hidden) this.revealAll(); };
+    document.addEventListener('visibilitychange', this.onVis);
+    // red de seguridad: si el bucle de cuadro no corre, se muestra todo
+    setTimeout(() => { if (this.ticks < 3) this.revealAll(); }, 600);
+    // rAF loop: works whether the page scrolls the window or a container
+    this.frame = () => {
+      this.ticks++;
+      // el ancla es sticky: la referencia debe ser el contenedor, que no se fija
+      const a = document.getElementById('gwtop');
+      const rootEl = a && a.parentElement;
+      const y = rootEl ? Math.max(0, -rootEl.getBoundingClientRect().top)
+                       : (window.scrollY || (document.scrollingElement || document.documentElement).scrollTop || 0);
+      if (this._y == null || Math.abs(y - this._y) > 0.5) { this._y = y; this.onScroll(y); }
+      this.observe();
+      this.raf = requestAnimationFrame(this.frame);
+    };
+    this.raf = requestAnimationFrame(this.frame);
+    this.startCarousel();
+    this.setupStack();
+    [400, 1200, 3000].forEach((t) => setTimeout(() => this.setupStack(true), t));
+    this.onResize = () => this.setupStack(true);
+    window.addEventListener('resize', this.onResize);
+    // las secciones sticky reportan su caja fijada: el salto por hash se calcula solo
+    this.onAnchor = (e) => {
+      const link = e.target && e.target.closest && e.target.closest('a[href^="#"]');
+      if (!link) return;
+      const id = link.getAttribute('href').slice(1);
+      if (!id || !this.stack) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      const root = this.stack[0].parentElement;
+      const kids = Array.prototype.slice.call(root.children);
+      let top = 0, found = false;
+      for (let i = 0; i < kids.length; i++) {
+        const el = kids[i];
+        if (el === target) { found = true; break; }
+        if (el.offsetHeight > 0 && getComputedStyle(el).position !== 'fixed') top += el.offsetHeight;
+      }
+      if (!found) return;
+      e.preventDefault();
+      const nav = document.getElementById('gwNav');
+      const pad = id === 'gwtop' ? 0 : (nav ? nav.offsetHeight : 0) + 6;
+      const base = root.getBoundingClientRect().top + (window.scrollY || (document.scrollingElement || document.documentElement).scrollTop || 0);
+      window.scrollTo({ top: Math.max(0, base + top - pad), behavior: 'smooth' });
+    };
+    document.addEventListener('click', this.onAnchor, true);
+  }
+
+  // apilado tipo Framer: cada sección se fija y la siguiente se desliza encima
+  setupStack(force) {
+    const root = document.getElementById('gwtop') && document.getElementById('gwtop').parentElement;
+    if (!root) return;
+    const secs = Array.prototype.filter.call(root.children, (el) =>
+      (el.tagName === 'SECTION' || el.tagName === 'FOOTER') && el.offsetHeight > 0);
+    if (!secs.length) return;
+    if (this.stack && this.stack.length === secs.length && !force) return;
+    this.stack = secs;
+    const vh = window.innerHeight;
+    secs.forEach((s, i) => {
+      if (s.hasAttribute('data-nostack')) {
+        s.style.position = 'relative';
+        s.style.top = '';
+        s.style.zIndex = String(2 + i);
+        s.style.filter = '';
+        return;
+      }
+      const hgt = s.offsetHeight;
+      s.style.position = 'sticky';
+      s.style.top = Math.min(0, vh - hgt) + 'px';
+      s.style.zIndex = String(2 + i);
+      s.style.willChange = 'filter';
+    });
+  }
+
+  // duplica las fotos del carrusel para que el loop sea continuo
+  startCarousel() {
+    const track = document.getElementById('gwTrack');
+    if (!track || track.dataset.looped) return;
+    const kids = Array.prototype.slice.call(track.children);
+    if (!kids.length) return;
+    track.dataset.looped = '1';
+    this.track = track;
+    this.originals = kids;
+    this.syncCarousel();
+    track.style.animation = 'gwSlide 46s linear infinite';
+    track.addEventListener('mouseenter', () => { track.style.animationPlayState = 'paused'; });
+    track.addEventListener('mouseleave', () => { track.style.animationPlayState = 'running'; });
+    // solo al soltar una foto sobre un marco del carrusel se rehacen las copias
+    this.onDrop = (e) => {
+      if (!e.target || !e.target.closest || !e.target.closest('#gwTrack')) return;
+      [900, 2400].forEach((t) => setTimeout(() => this.syncCarousel(), t));
+    };
+    document.addEventListener('drop', this.onDrop, true);
+  }
+
+  syncCarousel() {
+    const track = this.track;
+    if (!track || !this.originals) return;
+    Array.prototype.slice.call(track.children).forEach((c) => {
+      if (this.originals.indexOf(c) === -1) track.removeChild(c);
+    });
+    this.originals.forEach((k) => {
+      const c = k.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      track.appendChild(c);
+    });
+  }
+
+  componentDidUpdate() { this.observe(); }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    if (this.raf) cancelAnimationFrame(this.raf);
+    document.removeEventListener('visibilitychange', this.onVis);
+    window.removeEventListener('resize', this.onResize);
+    document.removeEventListener('click', this.onAnchor, true);
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+    clearInterval(this.poll);
+  }
+
+  remote() { return !!(this.props.supabaseUrl && this.props.supabaseKey); }
+
+  endpoint(table) {
+    return String(this.props.supabaseUrl).replace(/\/+$/, '') + '/rest/v1/' + (table || this.props.tablaGeneros || 'generos');
+  }
+
+  headers() {
+    return {
+      apikey: this.props.supabaseKey,
+      Authorization: 'Bearer ' + this.props.supabaseKey,
+      'Content-Type': 'application/json',
+      Prefer: 'return=minimal'
+    };
+  }
+
+  loadVotes() {
+    if (!this.remote()) return;
+    fetch(this.endpoint() + '?select=genero', { headers: this.headers() })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((rows) => { if (Array.isArray(rows)) this.setState({ generos: rows }); })
+      .catch(() => {});
+  }
+
+  tickCountdown() {
+    const diff = Math.max(0, this.TARGET - Date.now());
+    const sec = document.getElementById('gwCount');
+    if (sec) sec.style.display = diff > 0 ? '' : 'none';
+    const pad = (n) => String(n).padStart(2, '0');
+    const set = (id, v) => { const el = document.getElementById(id); if (el && el.textContent !== v) el.textContent = v; };
+    set('gw-d', String(Math.floor(diff / 86400000)));
+    set('gw-h', pad(Math.floor(diff / 3600000) % 24));
+    set('gw-m', pad(Math.floor(diff / 60000) % 60));
+    set('gw-s', pad(Math.floor(diff / 1000) % 60));
+  }
+
+  revealAll() {
+    this.noAnim = true;
+    this.pending = [];
+    document.querySelectorAll('[data-reveal],[data-mask]').forEach((el) => {
+      if (!this.seen) this.seen = new WeakSet();
+      this.seen.add(el);
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.clipPath = 'none';
+    });
+  }
+
+  observe() {
+    if (!this.seen) { this.seen = new WeakSet(); this.pending = []; }
+    if (this.noAnim) return;
+    const vh = window.innerHeight;
+    const hide = (el) => {
+      if (el.hasAttribute('data-mask')) {
+        el.style.clipPath = 'inset(0 0 108% 0)';
+        el.style.transform = 'translateY(13px)';
+        el.style.transition = 'clip-path 1.25s cubic-bezier(.22,.61,.36,1),transform 1.25s cubic-bezier(.22,.61,.36,1)';
+      } else {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(26px)';
+      }
+    };
+    const show = (el) => {
+      const d = parseInt(el.getAttribute('data-delay') || '0', 10);
+      setTimeout(() => {
+        if (el.hasAttribute('data-mask')) { el.style.clipPath = 'inset(0 0 -12% 0)'; } else { el.style.opacity = '1'; }
+        el.style.transform = 'none';
+      }, d);
+    };
+    document.querySelectorAll('[data-reveal],[data-mask]').forEach((el) => {
+      if (this.seen.has(el)) return;
+      this.seen.add(el);
+      if (el.getBoundingClientRect().top < vh - 60) return; // ya visible: se deja tal cual
+      hide(el);
+      this.pending.push(el);
+    });
+    if (!this.pending.length) return;
+    this.pending = this.pending.filter((el) => {
+      const r = el.getBoundingClientRect();
+      const measurable = r.height > 0 || r.top !== 0;
+      if (measurable && r.top > vh - 60) return true;
+      show(el);
+      return false;
+    });
+  }
+
+  save(updater) {
+    this.setState(updater, () => {
+      try {
+        localStorage.setItem(this.KEY, JSON.stringify({
+          generos: this.remote() ? [] : this.state.generos,
+          myGenres: this.state.myGenres
+        }));
+      } catch (e) {}
+    });
+  }
+
+  FAQS = [
+    { q: '¿A qué hora llego?', a: 'A las 3:40 p.m. en Villa Victoria. La ceremonia empieza puntual a las 4:00 p.m.' },
+    { q: '¿Puedo llevar niños?', a: 'La recepción es solo para adultos. Escríbenos si necesitas ayuda para coordinar algo.' },
+    { q: '¿Dónde estaciono?', a: 'Valet parking en Villa Victoria desde las 3:30 p.m., sin costo para los invitados.' },
+    { q: '¿Qué me pongo?', a: 'Formal de jardín. El piso es de grava, así que conviene tacón ancho o sandalia plana.' }
+  ];
+
+  faqList() {
+    const open = this.state.faqOpen;
+    return this.FAQS.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      maxH: open === i ? '260px' : '0px',
+      op: open === i ? 1 : 0,
+      rot: open === i ? 'rotate(45deg)' : 'rotate(0deg)',
+      toggle: () => this.setState((s) => ({ faqOpen: s.faqOpen === i ? null : i }))
+    }));
+  }
+
+  renderVals() {
+    const playlistId = this.props.spotifyPlaylistId || '37i9dQZF1DXcBWIGoYBM5M';
+    const wa = (this.props.whatsapp || '51987654321').replace(/[^0-9]/g, '');
+    const pad = (n) => String(n).padStart(2, '0');
+
+    const copy = (e) => {
+      const card = e.currentTarget.closest('[data-copy-card]');
+      const node = card && card.querySelector('[data-copy-value]');
+      const text = node ? node.textContent.trim() : '';
+      const key = card ? Array.prototype.indexOf.call(document.querySelectorAll('[data-copy-card]'), card) : -1;
+      const names = ['yape', 'plin', 'cuenta'];
+      const done = () => {
+        this.setState({ copied: names[key] || '' });
+        setTimeout(() => this.setState({ copied: '' }), 2400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, done);
+      } else { done(); }
+    };
+
+    const gCounts = {};
+    this.state.generos.forEach((g) => {
+      const k = (g && g.genero) || '';
+      if (k) gCounts[k] = (gCounts[k] || 0) + 1;
+    });
+    const total = this.GENEROS.reduce((s, g) => s + (gCounts[g.name] || 0), 0);
+    const gTop = Math.max(1, ...this.GENEROS.map((g) => gCounts[g.name] || 0));
+    const leader = this.GENEROS.slice().sort((a, b) => (gCounts[b.name] || 0) - (gCounts[a.name] || 0))[0];
+
+    const LIMIT = 3;
+    const mineList = this.state.myGenres || [];
+    const voteGenre = (name) => () => {
+      const row = { genero: name };
+      const mgNow = this.state.myGenres || [];
+      if (mgNow.indexOf(name) !== -1) { this.setState({ genreMsg: 'Ya votaste por ' + name + '.' }); return; }
+      if (mgNow.length >= LIMIT) { this.setState({ genreMsg: 'Ya usaste tus ' + LIMIT + ' votos. Gracias.' }); return; }
+      this.save((prev) => {
+        const mg = prev.myGenres || [];
+        if (mg.indexOf(name) !== -1 || mg.length >= LIMIT) return null;
+        const next = mg.concat([name]);
+        const left = LIMIT - next.length;
+        return {
+          generos: prev.generos.concat([row]),
+          myGenres: next,
+          genreMsg: left > 0 ? 'Voto registrado. Te quedan ' + left + ' de ' + LIMIT + '.' : 'Listo, usaste tus ' + LIMIT + ' votos. Gracias.'
+        };
+      });
+
+      if (this.remote()) {
+        fetch(this.endpoint(), { method: 'POST', headers: this.headers(), body: JSON.stringify(row) })
+          .then(() => this.loadVotes())
+          .catch(() => this.setState({ genreMsg: 'Guardamos tu voto en este dispositivo, pero no pudimos sincronizarlo.' }));
+      }
+    };
+
+    const generos = this.GENEROS.map((g) => {
+      const c = gCounts[g.name] || 0;
+      const mine = mineList.indexOf(g.name) !== -1;
+      return {
+        name: g.name,
+        tag: mine ? 'Tu voto' : g.tag,
+        tagColor: mine ? 'rgba(238,240,231,.75)' : 'rgba(28,25,23,.42)',
+        votes: c === 1 ? '1 voto' : c + ' votos',
+        pct: (total ? Math.round((c / total) * 100) : 0) + '%',
+        w: c > 0 ? Math.max(6, Math.round((c / gTop) * 100)) + '%' : '0%',
+        fill: mine ? 'rgba(238,240,231,.17)' : 'rgba(28,25,23,.07)',
+        rowBg: mine ? '#2E3A2A' : 'transparent',
+        textColor: mine ? '#EEF0E7' : '#1C1917',
+        vote: voteGenre(g.name)
+      };
+    });
+    const genreLeader = total
+      ? 'Va ganando: ' + leader.name + ' · ' + total + (total === 1 ? ' voto en total' : ' votos en total')
+      : 'Aún no hay votos · sé el primero';
+
+    const sendRsvp = (e) => {
+      e.preventDefault();
+      const f = e.currentTarget;
+      const nombre = (f.nombre.value || '').trim();
+      if (!nombre) { this.setState({ rsvpMsg: 'Escribe tu nombre para confirmar.' }); return; }
+      const t = 'Hola Valeria y David. Confirmo mi asistencia a la boda del 06/03/2027.\n\nNombre: ' + nombre +
+        '\nAsistencia: ' + f.asistencia.value +
+        '\nAcompañantes: ' + f.acompanantes.value +
+        (f.mensaje.value.trim() ? '\nMensaje: ' + f.mensaje.value.trim() : '');
+      window.open('https://wa.me/' + wa + '?text=' + encodeURIComponent(t), '_blank');
+      this.setState({ rsvpMsg: 'Se abrió WhatsApp con tu mensaje listo para enviar.' });
+    };
+
+    return {
+      playlistId: playlistId,
+      playlistUrl: 'https://open.spotify.com/playlist/' + playlistId,
+      generos: generos,
+      genreLeader: genreLeader,
+      genreMsg: this.state.genreMsg,
+      rsvpMsg: this.state.rsvpMsg,
+      copy: copy,
+      faqs: this.faqList(),
+      sendRsvp: sendRsvp,
+      skipIntro: () => { if (this.closeIntro) this.closeIntro(); },
+      copiedYape: this.state.copied === 'yape' ? 'Número copiado' : '',
+      copiedPlin: this.state.copied === 'plin' ? 'Número copiado' : '',
+      copiedCuenta: this.state.copied === 'cuenta' ? 'Cuenta copiada' : ''
+    };
+  }
+}
+
+</script>
+
+
+</body></html>
